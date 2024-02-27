@@ -16,7 +16,9 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
+- intent: tell_name
+  examples: |
+    - Hello I am [John](name)
 - intent: goodbye
   examples: |
     - cu
