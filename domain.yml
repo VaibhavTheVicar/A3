@@ -9,9 +9,13 @@ intents:
   - mood_unhappy
   - bot_challenge
   - tell_name
+  - tsq
 
 entities:
   - name
+  - source_ip
+  - service_name
+  - destination_ip
 
 slots:
   name:
@@ -20,12 +24,33 @@ slots:
       - type: from_entity
         entity: name
         influence_conversation: true
+  source_ip:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: source_ip
+        influence_conversation: true
+  service_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: service_name
+        influence_conversation: true
+  destination_ip:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: destination_ip
+        influence_conversation: true
+
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
   utter_name:
   - text: "Hi, {name}"
+  utter_tsq:
+    - text: "source_ip:{source_ip},destination_ip:{destination_ip},service:{service_name}"
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"

@@ -14,6 +14,11 @@ stories:
     - intent: tell_name
     - action: utter_name
 
+- story: tsq path
+  steps:
+    - intent: tsq
+    - action: utter_tsq
+
 - story: sad path 1
   steps:
   - intent: greet
