@@ -48,7 +48,7 @@ responses:
   utter_greet:
   - text: "Hey! How are you?"
   utter_name:
-  - text: "Hi, {name}"
+  - text: "device : {name}"
   utter_tsq:
     - text: "source_ip:{source_ip},destination_ip:{destination_ip},service:{service_name}"
   utter_cheer_up:

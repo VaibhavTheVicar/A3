@@ -3,18 +3,38 @@ version: "3.1"
 nlu:
   - intent: tsq
     examples: |
-      - Run a traffic simulation from [192.168.1.10](source_ip) to [192.168.2.20](destination_ip) for service [web_traffic](service_name).
-      - Simulate traffic flow from [10.0.0.5](source_ip) to [10.0.0.10](destination_ip) for [application](service_name) service.
-      - Execute a traffic query for the route [172.16.0.1](source_ip) to [172.16.0.5](destination_ip) concerning [network_traffic](service_name).
-      - Run a simulation to analyze traffic between [192.168.0.5](source_ip) and [192.168.0.10](destination_ip) for [specific_service](service_name).
-      - Simulate traffic patterns from [10.1.1.1](source_ip) to [10.1.1.5](destination_ip) for [user_service](service_name).
-      - Execute a traffic analysis query from [192.168.10.5](source_ip) to [192.168.10.8](destination_ip) for [security_service](service_name).
-      - Analyze traffic flow between [192.168.2.1](source_ip) and [192.168.2.5](destination_ip) for [chosen_service](service_name).
-      - Run a traffic simulation query from [10.2.2.1](source_ip) to [10.2.2.10](destination_ip) for [cloud_service](service_name).
+      - Run a traffic simulation [from 192.168.1.10](source_ip) [to 192.168.2.20](destination_ip) for service [web_traffic](service_name).
+      - Simulate traffic flow [from 10.0.0.5](source_ip) [to 10.0.0.10](destination_ip) for [application](service_name) service.
+      - Execute a traffic query for the [route 172.16.0.1](source_ip) [to 172.16.0.5](destination_ip) concerning [network_traffic](service_name).
+      - Run a simulation to analyze traffic [between 192.168.0.5](source_ip) [and 192.168.0.10](destination_ip) for [specific_service](service_name).
+      - Simulate traffic patterns [from 10.1.1.1](source_ip) [to 10.1.1.5](destination_ip) for [user_service](service_name).
+      - Execute a traffic analysis query [from 192.168.10.5](source_ip) [to 192.168.10.8](destination_ip) for [security_service](service_name).
+      - Analyze traffic flow [between 192.168.2.1](source_ip) [and 192.168.2.5](destination_ip) for [chosen_service](service_name).
+      - Run a traffic simulation query [from 10.2.2.1](source_ip) [to 10.2.2.10](destination_ip) for [cloud_service](service_name).
 
   - intent: tell_name
     examples: |
-      - Hello I am [John](name)
+      - open report for [ketchup](name) device.
+      - provide details about [ketchup](name) device.
+      - fetch information for [ketchup](name) device.
+      - give me the report on [ketchup](name) device.
+      - tell me about [ketchup](name) device.
+      - show details for [ketchup](name) device.
+      - display report for [ketchup](name) device.
+      - what can you tell me about [ketchup](name) device?
+      - I need information on [ketchup](name) device.
+      - retrieve data for [ketchup](name) device.
+      - fetch report for [ketchup](name) device.
+      - get details for [ketchup](name) device.
+      - open the [ketchup](name) device report.
+      - share insights on [ketchup](name) device.
+      - explain the details of [ketchup](name) device.
+      - provide a report for [ketchup](name) device.
+      - describe [ketchup](name) device.
+      - reveal information about [ketchup](name) device.
+      - access details for [ketchup](name) device.
+      - give me the lowdown on [ketchup](name) device.
+
 
 
 
