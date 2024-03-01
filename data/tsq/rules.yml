@@ -6,6 +6,3 @@ rules:
     steps:
       - intent: tsq
       - action: action_tsq
-      - action: action_clear_service_name_slot
-      - action: action_clear_source_ip_slot
-      - action: action_clear_destination_ip_slot

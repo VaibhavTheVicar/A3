@@ -6,5 +6,4 @@ rules:
     steps:
       - intent: tell_name
       - action: action_tell_name
-      - action: action_clear_device_name_slot
 

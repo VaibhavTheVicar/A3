@@ -13,10 +13,6 @@ intents:
   - show_risks_for_device
 
 actions:
-  - action_clear_destination_ip_slot
-  - action_clear_source_ip_slot
-  - action_clear_service_name_slot
-  - action_clear_device_name_slot
   - action_show_risks_for_device
   - action_tell_name
   - action_tsq

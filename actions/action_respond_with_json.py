@@ -3,6 +3,8 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 import re
+from rasa_sdk.events import SlotSet
+
 
 def extract_ipv4(text):
     # Define a regular expression pattern for IPv4 addresses
@@ -25,8 +27,11 @@ class ActionRespondToTsq(Action):
         dispatcher.utter_message(
             json.dumps({"action": self.name(),
                         "destination_ip": extract_ipv4(tracker.get_slot("destination_ip_slot")),
-                       "source_ip_slot": extract_ipv4(tracker.get_slot("source_ip_slot")),
-                       "service_name_slot": tracker.get_slot("service_name_slot")}));
+                        "source_ip_slot": extract_ipv4(tracker.get_slot("source_ip_slot")),
+                        "service_name_slot": tracker.get_slot("service_name_slot")}));
+        SlotSet("destination_ip_slot", None);
+        SlotSet("source_ip_slot", None);
+        SlotSet("service_name_slot", None);
         return [];
 
 
@@ -39,6 +44,7 @@ class ActionShowRisk(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         dispatcher.utter_message(json.dumps({"action": self.name(), "device_name": tracker.get_slot("name")}));
+        SlotSet("name", None)
         return [];
 
 
@@ -51,4 +57,5 @@ class ActionShowReport(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         dispatcher.utter_message(json.dumps({"action": self.name(), "device_name": tracker.get_slot("name")}));
+        SlotSet("name", None)
         return [];
