@@ -1,0 +1,10 @@
+version: "3.1"
+
+rules:
+
+  - rule: device report floe
+    steps:
+      - intent: tell_name
+      - action: action_tell_name
+      - action: action_clear_device_name_slot
+

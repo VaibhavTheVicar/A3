@@ -1,0 +1,9 @@
+version: "3.1"
+
+rules:
+
+  - rule: tsq flow
+    steps:
+      - intent: show_risks_for_device
+      - action: action_show_risks_for_device
+      - action: action_clear_device_name_slot

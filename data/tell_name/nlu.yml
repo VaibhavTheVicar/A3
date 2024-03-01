@@ -1,0 +1,43 @@
+version: "3.1"
+
+nlu:
+
+  - intent: tell_name
+    examples: |
+      - open report for [ketchup](name) device.
+      - provide details about [ketchup](name) device.
+      - fetch information for [ketchup](name) device.
+      - give me the report on [ketchup](name) device.
+      - tell me about [ketchup](name) device.
+      - show details for [ketchup](name) device.
+      - display report for [ketchup](name) device.
+      - what can you tell me about [ketchup](name) device?
+      - I need information on [ketchup](name) device.
+      - retrieve data for [ketchup](name) device.
+      - fetch report for [ketchup](name) device.
+      - get details for [ketchup](name) device.
+      - open the [ketchup](name) device report.
+      - share insights on [ketchup](name) device.
+      - explain the details of [ketchup](name) device.
+      - provide a report for [ketchup](name) device.
+      - describe [ketchup](name) device.
+      - reveal information about [ketchup](name) device.
+      - access details for [ketchup](name) device.
+      - give me the lowdown on [ketchup](name) device.
+
+  - lookup: name
+    examples: |
+      - device names
+      - s-1--pix-144-5-136-6-1
+      - poppy-1
+      - PA-VM_forAutomation
+      - 10.20.145.1
+      - Ketchup
+      - Mustard
+      - 10.20.138.1
+      - panoramaWithIPT
+      - juniper
+      - Sarid-1
+      - Damiana
+      - junosspacelogs
+      - PaloAltoFirewall
