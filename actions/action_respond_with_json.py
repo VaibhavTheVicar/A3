@@ -48,6 +48,19 @@ class ActionShowRisk(Action):
         return [];
 
 
+class ActionCoveredRules(Action):
+
+    def name(self) -> Text:
+        return "action_covered_rules"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message(json.dumps({"action": self.name(), "device_name": tracker.get_slot("name")}));
+        SlotSet("name", None)
+        return [];
+
+
 class ActionShowReport(Action):
 
     def name(self) -> Text:
