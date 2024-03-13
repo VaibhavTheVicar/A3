@@ -11,11 +11,13 @@ intents:
   - tell_name
   - tsq
   - show_risks_for_device
+  - covered_rules
 
 actions:
   - action_show_risks_for_device
   - action_tell_name
   - action_tsq
+  - action_covered_rules
 
 entities:
   - name

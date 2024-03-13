@@ -1,0 +1,8 @@
+version: "3.1"
+
+rules:
+
+  - rule: covered rules
+    steps:
+      - intent: covered_rules
+      - action: action_covered_rules
