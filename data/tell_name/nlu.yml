@@ -25,19 +25,3 @@ nlu:
       - access details for [ketchup](name) device.
       - give me the lowdown on [ketchup](name) device.
 
-  - lookup: name
-    examples: |
-      - device names
-      - s-1--pix-144-5-136-6-1
-      - poppy-1
-      - PA-VM_forAutomation
-      - 10.20.145.1
-      - Ketchup
-      - Mustard
-      - 10.20.138.1
-      - panoramaWithIPT
-      - juniper
-      - Sarid-1
-      - Damiana
-      - junosspacelogs
-      - PaloAltoFirewall

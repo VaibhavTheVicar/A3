@@ -1,0 +1,220 @@
+version: "3.1"
+
+nlu:
+
+  - intent: show_unused_rules
+    examples: |
+      - Get unused rules for device [ketchup](name).
+      - Fetch unused rules for device [ketchup](name).
+      - Show unused rules for device [ketchup](name).
+      - Display rules not in use for device [ketchup](name).
+      - Retrieve unused rules related to [ketchup](name).
+      - List rules not actively employed by [ketchup](name).
+      - Present rules not assigned to [ketchup](name).
+      - Showcase rules for [ketchup](name) that are not in operation.
+      - Exhibit inactive rules for the specified [ketchup](name).
+      - Enumerate rules not currently utilized by [ketchup](name).
+      - Uncover rules not applied to [ketchup](name).
+      - Demonstrate rules for [ketchup](name) that remain unused.
+      - Illustrate rules not engaged by [ketchup](name).
+      - Feature rules for [ketchup](name) that are not in play.
+      - Provide a list of rules not in effect for [ketchup](name).
+      - Highlight rules for [ketchup](name) that have not been used.
+      - Unveil rules not currently in operation for [ketchup](name).
+      - Disclose rules not assigned to [ketchup](name).
+      - Display rules for [ketchup](name) that are not currently active.
+      - Illustrate unused rules for the specified [ketchup](name).
+      - Present a list of rules not presently applied to [ketchup](name).
+      - Showcase rules for [ketchup](name) that are currently inactive.
+      - Reveal rules not in use for the specified [ketchup](name).
+      
+
+  - lookup: name
+    examples: |
+      - Queen-1
+      - ciscoasa
+      - TestGroup
+      - Lambada
+      - default-nsg/vm-berlin-nsg
+      - firepower01_vFTD
+      - HUBDPLB_SECGIO001_root
+      - MYXKL-SECGIL201
+      - aws
+      - Antonella
+      - test1
+      - FG100FTK21030589
+      - Queen-1_Super-duper_VSYS_for_Alex.
+      - paloAlto
+      - Alex_will_make_Shark_change_For_Journal
+      - PA-VM_forAutomation
+      - 172_16_24_40
+      - us-east-1/vpc2
+      - s_pix_10_20_7_1_1
+      - Iris_Cisco
+      - allow-ssh-group/acl-07a3facb0d89e92cd
+      - ciscofirepowertestdevice
+      - GroupB
+      - palo16
+      - PaloAltoPanoramaManagement
+      - firepower
+      - Lambada_
+      - F5LTM
+      - HUBDPLB-SECGIO001
+      - FG100FTK21030589_root
+      - PPuma.algosec.com_root
+      - GroupTest
+      - fgbrdc_cpx02_srx3600
+      - palo13
+      - Alex_will_make_Shark_change_For_Journal_root
+      - Citi_bug_16871_CKP
+      - vm-co7-minimal-nsg
+      - us-east-1/vpc1
+      - PPuma.algosec.com
+      - s_ISG1000_1_root
+      - MYXKL-SECGIL101-root
+      - firepower01
+      - westeurope/Vnet_Beta
+      - ciscofirepowerdevice
+      - Rihanna-1
+      - VR-PPuma.algosec.com_root_default
+      - 10_236_54_1
+      - westeurope/Unattached_Network_Security_Groups
+      - PA-VM_forAC
+      - eu-central-1/vpc-frankfurt-1
+      - VDOM-B
+      - azureFromSimulator
+      - ciscofirepowertestdevice_vFTD
+      - gdfl_stden_isg20_1218
+      - VR-PPuma.algosec.com_root_Alex_Testing
+      - Butterfly-Cluster
+      - BP_Bochum_20070727
+      - ciscofirepowerdevice_CertFTD2
+      - VR-PA-VM_forAutomation_vsys1_vRouter-2
+      - fortilogs
+      - VR-PPuma.algosec.com_root_QA-vr1
+      - s-1--pix-144-5-136-6-1
+      - VR-PPuma.algosec.com_root_default
+      - VR-Luka_vsys1_users-zone
+      - panoramadevice
+      - CKP-R8020-MDS
+      - PPuma.algosec.com_root
+      - PPuma.algosec.com
+      - VDOM-A
+      - Tomato_Test_Device
+      - GroupA
+      - fortidirect
+      - Da_VDOM1
+      - Ott_Dam_HA
+      - VR-Luka_vsys1_parent_vw
+      - vm-co7-beta-nsg
+      - mail-nsg
+      - Algosec
+      - ciscoMeraki
+      - default
+      - Isabella_Pan
+      - crudAristaDevice
+      - ckpFromFile
+      - VR-Queen-1_Super-duper_VSYS_for_Alex._Alex_tests_Virtual_Routers
+      - JuniperManagement
+      - csgfw031
+      - 10-20-131-16
+      - VR-Alex_will_make_Shark_change_For_Journal_root_default
+      - MYXKL-SECGIL101
+      - northeurope/VNet-Cologne
+      - westeurope/VNet_Alfa
+      - northeurope/VNet-Dublin
+      - Sarid-1_root
+      - panoramaUC
+      - Luka_vsys1
+      - northeurope/VNet-Amsterdam
+      - westeurope/VNet_Delta
+      - PA-VM_forAutomation_vsys1
+      - FG100D3G16803186-TEST_DontChange
+      - FG100D3G16803186_TEST_DontChange_root
+      - VR-PA-VM_forAutomation_vsys1_vw.1
+      - northeurope/VNet-Berlin
+      - CloudGuardMGMT-nsg
+      - Algosec_Algosec_-_3
+      - Unprotected_VMs
+      - VR-Alex_will_make_Shark_change_For_Journal_root_default
+      - Alex_will_make_Shark_change_For_Journal
+      - VR-PPuma.algosec.com_root_Alex_Testing
+      - VR-PPuma.algosec.com_root_QA-vr1
+      - Algosec_Algosec_-_2
+      - mail-server-sg/allow-all-traffic-acl
+      - fortigate
+      - PaloAltoFirewall
+      - VR-Luka_vsys1_Int2-zone-vr
+      - palo18
+      - Algosec_Algosec_-_1
+      - VR-PA-VM_forAutomation_vsys1_vw.1
+      - Patchouli
+      - ciscofirepower
+      - VR-Luka_vsys1_default
+      - FortinetFortigate_root
+      - PA-VM_forAutomation
+      - CKPMDSDEVICE
+      - pix1FromSimulator
+      - PA-VM_forAutomation_vsys1
+      - ciscoOrig
+      - Da_vDOM2
+      - ExtraHot2
+      - db-sg/filtering1-acl
+      - Alex_will_make_Shark_change_For_Journal_root
+      - vm-berlin-4-nsg/berlin-subnet-nsg
+      - vDOM1
+      - DevicesVDOM
+      - MYXKL_SECGIL201_root
+      - IHK-bug-13077
+      - FalCon-Test
+      - ciscofirepower_ciscofirepower-vFTD
+      - minimal-prot-nsg/linux-standard-nsg
+      - VR-Rihanna-1_vsys1_default
+      - Cisco-ASA-PIX-TEST
+      - VR-Lambada__Banana
+      - Ott_Dam_HA_vDOM1_HA
+      - Ott_Dam_HA_vDOM2_HA
+      - web-nsg
+      - FortinetFortigate
+      - CKP-MDS-TEST
+      - junosspacelogs
+      - Sarid-1_VDOM
+      - FGVM01TM21002081_root
+      - ssh-security-group/web-security-group/allow-all-traffic-acl
+      - MYXKL-SECGIL101_root
+      - VR-PA-VM_forAutomation_vsys1_VirtualRouter1
+      - strict-nsg/linux-standard-nsg
+      - panoramamgmtdevice
+      - vm-cologne-nsg
+      - vdom
+      - Ott_Dam_HA_root
+      - vDOM2
+      - PA-VM_forAC_vsys1
+      - fortidirect_Balfur2
+      - VR-Luka_vsys1_default_vw
+      - Sarid-1_newVDOM-5
+      - AFF_VDOM
+      - Antonella_root
+      - FGVM01TM21002081
+      - firepower_FDT1
+      - remote-access-nsg
+      - VR-Rihanna-1_vsys1_VR-2
+      - Luka
+      - FortimanagerAntonella
+      - berlin3-nsg/vm-berlin-nsg
+      - Rihanna-1_vsys1
+      - vm-ubuntu-delta-nsg/delta-sub-nsg
+      - panorama
+      - VR-PA-VM_forAutomation_vsys1_vRouter-2
+      - linux-standard-nsg
+      - vm-dublin1-nsg
+      - paloaltoFromSimulator
+      - CiscoAsaTestDevice
+      - VR-Rihanna-1_vsys1_VR-3
+      - VR-PA-VM_forAC_vsys1_Prod-VR.2
+      - VR-PA-VM_forAutomation_vsys1_VirtualRouter1
+      - VR-PA-VM_forAC_vsys1_default
+      - VR-PA-VM_forAutomation_vsys1_default
+      - VR-PA-VM_forAC_vsys1_VirtualRouter1
+      - vm-berlin-nsg
+      - VR-PA-VM_forAutomation_vsys1_default

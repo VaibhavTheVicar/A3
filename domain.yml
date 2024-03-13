@@ -12,12 +12,14 @@ intents:
   - tsq
   - show_risks_for_device
   - covered_rules
+  - show_unused_rules
 
 actions:
   - action_show_risks_for_device
   - action_tell_name
   - action_tsq
   - action_covered_rules
+  - action_show_unused_rules
 
 entities:
   - name
