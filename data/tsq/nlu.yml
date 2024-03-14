@@ -13,13 +13,33 @@ nlu:
       - Run a traffic simulation query [from 10.2.2.1](source_ip) [to 10.2.2.10](destination_ip) for [cloud_service](service_name).
       - Check traffic [from 10.2.2.1](source_ip) [to 10.2.2.10](destination_ip) for [cloud_service](service_name).
       - Check [ssh](service_name) traffic [from 10.2.2.1](source_ip) [to 10.2.2.10](destination_ip)
+      - Run a traffic simulation [from 192.168.1.10](source_ip) [to 192.168.2.20](destination_ip) for service [web_traffic/26](service_name).
+      - Simulate traffic flow [from 10.0.0.5](source_ip) [to 10.0.0.10](destination_ip) for [application/12](service_name) service.
+      - Execute a traffic query for the [route 172.16.0.1](source_ip) [to 172.16.0.5](destination_ip) concerning [network_traffic/22](service_name).
+      - Run a simulation to analyze traffic [between 192.168.0.5](source_ip) [and 192.168.0.10](destination_ip) for [specific_service/8](service_name).
+      - Simulate traffic patterns [from 10.1.1.1](source_ip) [to 10.1.1.5](destination_ip) for [user_service/16](service_name).
+      - Execute a traffic analysis query [from 192.168.10.5](source_ip) [to 192.168.10.8](destination_ip) for [security_service/30](service_name).
+      - Analyze traffic flow [between 192.168.2.1](source_ip) [and 192.168.2.5](destination_ip) for [chosen_service/10](service_name).
+      - Run a traffic simulation query [from 10.2.2.1](source_ip) [to 10.2.2.10](destination_ip) for [cloud_service/8](service_name).
+      - Check traffic [from 10.2.2.1](source_ip) [to 10.2.2.10](destination_ip) for [cloud_service/16](service_name).
+      - Check [ssh/56](service_name) traffic [from 10.2.2.1](source_ip) [to 10.2.2.10](destination_ip)
+      - Run a traffic simulation [from 192.168.1.10](source_ip) [to 192.168.2.20](destination_ip) for service [tcp/10](service_name).
+      - Run a traffic simulation [from 192.168.1.10/12](source_ip) [to 192.168.2.20/12](destination_ip) for service [web_traffic](service_name).
+      - Simulate traffic flow [from 10.0.0.5/8](source_ip) [to 10.0.0.10/16](destination_ip) for [application](service_name) service.
+      - Execute a traffic query for the [route 172.16.0.1/32](source_ip) [to 172.16.0.5/22](destination_ip) concerning [network_traffic](service_name).
+      - Run a simulation to analyze traffic [between 192.168.0.5/7](source_ip) [and 192.168.0.10/20](destination_ip) for [specific_service](service_name).
+      - Simulate traffic patterns [from 10.1.1.1/16](source_ip) [to 10.1.1.5/11](destination_ip) for [user_service](service_name).
   - regex: source_ip
     examples: |
-      - (?i)\b(?:\w+\s+){1,2}(?:\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\b
+      - (?i)\b(?:\w+\s+){1,2}(?:\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(?:/\d+)?\b
 
   - regex: destination_ip
     examples: |
-      - (?i)\b(?:\w+\s+){1,2}(?:\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\b
+      - (?i)\b(?:\w+\s+){1,2}(?:\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(?:/\d+)?\b
+
+  - regex: service_name
+    examples: |
+      - ^([a-zA-Z]+)(\/(\d+))?$
 
   - lookup: source_ip
     examples: |

@@ -8,7 +8,7 @@ from rasa_sdk.events import SlotSet
 
 def extract_ipv4(text):
     # Define a regular expression pattern for IPv4 addresses
-    ipv4_pattern = re.compile(r'\b(?:\d{1,3}\.){3}\d{1,3}\b')
+    ipv4_pattern = re.compile(r'\b(?:\d{1,3}\.){3}\d{1,3}(?:/\d+)?\b')
 
     # Use findall to get all matches in the text
     ipv4_addresses = ipv4_pattern.findall(text)
